@@ -155,5 +155,6 @@ def late_loans():
     late_loans = loan_manager.get_late_loans()
     return render_template('late_loans.html', late_loans=late_loans)
 
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == "__main__":
+    app.run(debug=True, port=5001)
+
